@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+section {
+    padding: 60px;
+    background-color: rgb(52, 52, 52);
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+section.hero {
+    background-color: rgb(193, 55, 16);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.me {
+    height: 400px;
+    width: 800px;
+}
+
+.me img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.about {
+    position: relative;
+    padding: 30px;
+    background-color: white;
+    font-size: 24px;
+    padding-bottom: 60px;
+}
+
+.socials {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.socials svg {
+    height: 32px;
+    width: 32px;
+}
+
+/* .background {
+    position: absolute;
+    top: -930px;
+    height: 2000px;
+    width: 800px;
+    background-color: rgb(31, 147, 182);
+    transform: rotateZ(65deg);
+} */
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-item {
+    background-color: white;
+    box-shadow: 0 0 20px 1px rgb(223, 223, 223);
+}
+
+.image {
+    height: 200px;
+    width: 100%;
+}
+
+.screenshot {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    position: relative;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.link {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 23px;
+    right: 20px;
+}
+
+.mywork {
+    background-color: white;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(24, 157, 187);
+}
+
+.photo {
+    height: 300px;
+    width: 100%;
+}
+
+.photo img  {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.infome {
+    max-width: 300px;
+    padding: 40px;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 20px;
+    }
+
+    .about {
+        padding-bottom: 80px;
+    }
+
+    .socials {
+        bottom: 20px;
+    }
+
+    section.hero {
+        display: block;
+    }
+
+    .me {
+        width: 100%;
+    }
+
+    section.contact {
+        display: block;
+    }
+
+    .photo {
+        height: 100%;
+        width: 100%;
+    }
+
+    .infome {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 500px;
+    }
+}
